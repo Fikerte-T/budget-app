@@ -1,0 +1,20 @@
+<div class='d-flex justify-content-center align-items-center'>
+    <div class='border border-light rounded p-5 position-absolute home-page d-flex flex-column align-items-center justify-content-center' style='height: 500px'>
+        <div>
+            <h1 class='position-relative app-name' style='top: 100px'>budgetapp</h1>
+        </div>
+        <div class="mt-auto w-100 text-center mb-3">
+            <% if user_signed_in? %>
+                
+                    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+               
+            
+            <% else %>
+                
+                    <%= link_to 'Log In', new_user_session_path, class: 'list-group-item list-group-item-action active' %> 
+                    <%= link_to 'Sign Up', new_user_registration_path, class: 'list-group-item list-group-item-action' %>
+                
+            <% end %>
+        </div>
+    </div>
+</div>
