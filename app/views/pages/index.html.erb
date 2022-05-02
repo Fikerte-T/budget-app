@@ -1,0 +1,13 @@
+<div class='d-flex justify-content-center align-items-center'>
+    <div class='border border-light rounded py-5 px-3 position-absolute home-page d-flex flex-column align-items-center justify-content-center' style='height: 500px'>
+        <div>
+            <h1 class='position-relative app-name' style='top: 100px'>budgetapp</h1>
+        </div>
+        <div class="mt-auto w-100 text-center mb-3">
+            <% unless user_signed_in? %>
+                <%= link_to 'LOG IN', new_user_session_path, class: 'list-group-item list-group-item-action active' %> 
+                <%= link_to 'SIGN UP', new_user_registration_path, class: 'list-group-item list-group-item-action' %>   
+            <% end %>
+        </div>
+    </div>
+</div>
