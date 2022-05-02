@@ -22,16 +22,17 @@
 
 .home-page {
     background-color: #fff;
-    width: 320px;
-    height: 75vh;
-    position: absolute;
-    top: 240px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
 }
 
-/* .home-page a {
-    width: 200px;
-    border: 1px solid #3778c2;
-    border-radius: 5px;
-    text-align: center;
-    margin: 5px
-} */
+.name-container {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 80%;
+}
