@@ -1,0 +1,22 @@
+<div class='d-flex justify-content-center align-items-center'>
+    <div class='container border border-light rounded py-5 px-3 mx-auto home-page d-flex flex-column align-items-center justify-content-center text-justify'>
+        <h2>New Category</h2>
+        <%= form_with url: user_categories_path, method: :post, local: true, scope: :category do |f| %>
+            <div class="mb-3">
+                <%= f.label :name, class: 'form-label' %><br>
+                <%= f.text_field :name, class: 'form-control' %>
+            </div>
+            <div class="mb-3 form-select">
+                <%= f.label :icon, class: 'form-label' %><br>
+                <%= f.select :icon, [['Select an icon', ''],
+                                    ['Shoa supermarket', 'shoa-supermarket.jpg']
+                                    ], class: "icon" 
+                %>
+            </div>
+            <div  class="actions">
+                <%= f.submit 'Add Category', class: 'btn btn-primary' %>
+            </div>
+        <%end%>
+    </div>
+</div>
+
