@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+ body {
+     background-color: rgb(247, 247, 247);
+ }
+.app-name {
+    font-family: 'Lobster', cursive;
+}
+
+.home-page {
+    background-color: #fff;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.name-container {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 80%;
+}
