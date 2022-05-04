@@ -1,4 +1,4 @@
 class Category < ApplicationRecord
   belongs_to :user
-  has_many :transactions
+  has_many :purchases
 end
