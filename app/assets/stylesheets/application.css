@@ -16,6 +16,19 @@
  body {
      background-color: rgb(247, 247, 247);
  }
+
+ nav {
+     background-color: #3778c2;
+ }
+
+ nav a {
+     color: #fff;
+ }
+
+ nav a:hover {
+    color: #fff;
+ }
+
 .app-name {
     font-family: 'Lobster', cursive;
 }
@@ -23,7 +36,7 @@
 .home-page {
     background-color: #fff;
     position: fixed; 
-    top: 0; 
+    top: 1; 
     left: 0; 
     min-width: 100%;
     min-height: 100%;
@@ -36,3 +49,17 @@
     min-width: 100%;
     min-height: 80%;
 }
+
+ .add-category {
+    position: absolute;
+    bottom: 0;
+    background-color: #5fb523;
+}
+
+.add-category a {
+    margin: 20px auto;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    width: 90%;
+}
+
