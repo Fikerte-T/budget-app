@@ -1,6 +1,6 @@
 <% categories.each do |c| %>
     <div class="list-group list-group-light m-2">
-        <a href="<%= user_category_path(id: current_user.id) %>"  class="list-group-item list-group-item-action ">
+        <a href="<%= user_category_purchases_path(user_id: current_user.id, category_id: c.id) %>"  class="list-group-item list-group-item-action ">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center w-100">
                     <%= image_tag c.icon, size: "85x85"%>

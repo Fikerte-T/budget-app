@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :pages, only: %i[index]
   resources :users do
     resources :categories do
-      resources :transactions
+      resources :purchases
     end
   end
 end
