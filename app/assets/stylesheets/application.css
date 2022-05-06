@@ -21,6 +21,23 @@
      background-color: #3778c2;
  }
 
+.previous, .navbar-toggler-icon {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.2rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #fff;
+    /* border-color: rgba(0,0,0,.1) */
+}
+
+.previous:hover {
+    /* color: rgba(0,0,0,.7); */
+    text-decoration: none;
+
+}
+
  nav a {
      color: #fff;
  }
@@ -66,10 +83,10 @@
 }
 
 .add-category a {
-    margin: 20px auto;
+    margin: 10px auto;
     border: 1px solid #d7d7d7;
     border-radius: 5px;
-    width: 90%;
+    width: 95%;
 }
 
 select {

@@ -1,4 +1,6 @@
-
+<% if user_signed_in? %>  
+    <%= render 'shared/navbar' %>
+<% end %>
 
 <div class="d-flex align-items-center flex-column mb-3 justify-content-around" >
     <% if @categories.length > 0 %>
@@ -8,7 +10,7 @@
             <h4><%= 'No category to display' %></h4>
         </div>
     <% end %>
-    <div class="w-100 text-center add-category">
+    <div class="w-100 text-center mb-auto add-category">
         <%= link_to 'ADD CATEGORY', new_user_category_path, class: 'list-group-item list-group-item-action', style: "background-color: #5fb523; color: #fff; border-radius: 5px;" %>   
     </div>
 </div>
