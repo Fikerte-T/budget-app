@@ -14,4 +14,3 @@ class User < ApplicationRecord
     role == 'admin'
   end
 end
-
