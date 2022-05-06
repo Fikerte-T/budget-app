@@ -10,4 +10,3 @@ class User < ApplicationRecord
   validates :email, presence: true, length: { maximum: 250 }
   validates_uniqueness_of :email, case_sensitive: false
 end
-

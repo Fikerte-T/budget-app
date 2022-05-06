@@ -72,7 +72,7 @@ group :test do
   gem 'webdrivers'
 end
 
-gem 'devise'
-gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'cancancan'
+gem 'devise'
 gem 'ffi'
+gem 'rubocop', '>= 1.0', '< 2.0'

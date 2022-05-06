@@ -5,7 +5,6 @@ RSpec.describe User, type: :model do
   before { subject.save }
 
   describe 'User model' do
-    
     it 'should have a name' do
       expect(subject.name).to eq('tom')
     end
