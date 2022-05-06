@@ -1,11 +1,11 @@
 
 
-<div class="d-flex align-items-center flex-column mb-3 justify-content-around", style='height: 50vh;' >
+<div class="d-flex align-items-center flex-column mb-3 justify-content-around" >
     <% if @categories.length > 0 %>
         <%= render partial: 'categories', locals: {categories: @categories } %>
     <% else %>
         <div style='margin: 40px;'>
-            <h4><%= 'No food to display' %></h4>
+            <h4><%= 'No category to display' %></h4>
         </div>
     <% end %>
     <div class="w-100 text-center add-category">
