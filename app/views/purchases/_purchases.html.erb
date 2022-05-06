@@ -3,7 +3,7 @@
         <li class="list-group-item d-flex justify-content-between align-items-center">
             <div>
                 <div class="fw-bold"><%= p.name%></div>
-                <div class="text-muted"><%= p.created_at%></div>
+                <div class="text-muted"><%= p.created_at.strftime('%a-%b-%Y')%></div>
             </div>
             <span><b>$<%= p.amount%></b></span>
         </li>

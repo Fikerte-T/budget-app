@@ -7,7 +7,7 @@
                     <div class="m-3 flex-grow-1">
                         <p class="fw-bold mb-1"><%= c.name%></p>
                         <hr class='m-0 w-100'/>
-                        <small class="text-muted mb-0"><% c.created_at.to_date %></small>
+                        <div class="text-muted"><%= c.created_at.strftime('%a-%b-%Y')%></div>
                     </div>
                 </div>
                 <span><b>

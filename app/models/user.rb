@@ -9,4 +9,8 @@ class User < ApplicationRecord
   validates :name, presence: true, length: { maximum: 250, minimum: 3 }
   validates :email, presence: true, length: { maximum: 250 }
   validates_uniqueness_of :email, case_sensitive: false
+
+  def admin?
+    role == 'admin'
+  end
 end
