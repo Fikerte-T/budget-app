@@ -16,6 +16,36 @@
  body {
      background-color: rgb(247, 247, 247);
  }
+
+ nav {
+     background-color: #3778c2;
+ }
+
+.previous, .navbar-toggler-icon {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.2rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #fff;
+    /* border-color: rgba(0,0,0,.1) */
+}
+
+.previous:hover {
+    /* color: rgba(0,0,0,.7); */
+    text-decoration: none;
+
+}
+
+ nav a {
+     color: #fff;
+ }
+
+ nav a:hover {
+    color: #fff;
+ }
+
 .app-name {
     font-family: 'Lobster', cursive;
 }
@@ -29,10 +59,52 @@
     min-height: 100%;
 }
 
+.other-page {
+    background-color: #fff;
+    position: fixed; 
+    top: 1; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .name-container {
     position: fixed; 
     top: 0; 
     left: 0; 
     min-width: 100%;
     min-height: 80%;
+}
+
+ .add-category {
+    position: absolute;
+    bottom: 0;
+    background-color: #5fb523;
+}
+
+.add-category a {
+    margin: 10px auto;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    width: 95%;
+}
+
+select {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.card {
+    width: 96%;
 }

@@ -7,11 +7,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'pages#index'
-
   resources :pages, only: %i[index]
   resources :users do
     resources :categories do
-      resources :transactions
+      resources :purchases
     end
   end
 end
