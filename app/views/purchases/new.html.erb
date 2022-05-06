@@ -2,6 +2,9 @@
     <div class='container border border-light rounded py-5 px-3 mx-auto home-page d-flex flex-column align-items-center justify-content-center text-justify'>
         <h2>New Trasaction</h2>
         <%= form_with url: user_category_purchases_path, method: :post, local: true, scope: :purchase do |f| %>
+            <%= f.hidden_field :author_id, value: current_user.id %>
+            <%= f.hidden_field :category_id, value: @category.id %>
+
             <div class="mb-3">
                 <%= f.label :name, class: 'form-label' %><br>
                 <%= f.text_field :name, class: 'form-control' %>

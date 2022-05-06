@@ -1,7 +1,6 @@
 class CategoriesController < ApplicationController
   def index
-    @user = current_user
-    @categories = Category.where(user_id: @user.id)
+    @categories = current_user.categories
   end
 
   def new
@@ -16,10 +15,9 @@ class CategoriesController < ApplicationController
       else
         flash.alert = 'Category was not created.'
         render :new
-      end
+    end
   end
 
-  def show; end
 
   private
 

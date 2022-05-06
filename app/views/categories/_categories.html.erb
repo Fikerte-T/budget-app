@@ -10,7 +10,13 @@
                         <small class="text-muted mb-0"><% c.created_at.to_date %></small>
                     </div>
                 </div>
-                <span class="badge rounded-pill badge-success">Active</span>
+                <span><b>
+                <% total = 0 %>
+                <% c.purchases.each do |p|%>
+                    <%total += p.amount%>
+                <%end%>
+                $<%= total%>
+                </b></span>
             </div>
         </a>
     </div>
