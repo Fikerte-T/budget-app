@@ -1,4 +1,5 @@
 class Purchase < ApplicationRecord
-  has_many :categories
   belongs_to :author, class_name: 'User'
+  has_many :categories, through: :category_purchases
+  has_many :category_purchases, dependent: :destroy
 end
