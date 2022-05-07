@@ -66,6 +66,12 @@ group :development do
   # gem "spring"
 end
 
+
+group :production do
+ 
+end
+
+
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
@@ -77,3 +83,4 @@ gem 'cancancan'
 gem 'devise'
 gem 'ffi'
 gem 'rubocop', '>= 1.0', '< 2.0'
+gem 'uglifier', '>= 1.0.3', require: 'uglifier'
