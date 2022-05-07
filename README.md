@@ -2,6 +2,9 @@
 
 This is a budged app built with Ruby on Rails. It allows users manage their budget. Users can register and log in, so that the data is private to them, and they can have a list of transactions associated with a category, so that you can see how much money they spent and on what.
 
+## Demo
+Here is the link to [live app](https://limitless-waters-86087.herokuapp.com/)
+
 ## Entity Relationship Diagram(ERD)
 ![ERD](/erd_diagram.png)
 
